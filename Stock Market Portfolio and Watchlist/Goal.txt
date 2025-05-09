@@ -1,0 +1,40 @@
+STUDENT NUMBER: 123104113
+STUDENT NAME: ADVAIT MATHUR
+
+Topic: Stock Market portfolio and watchlist
+
+Objective: To implement a stock market portfolio and watchlist using concepts and principles of Object Oriented
+Programming in Python. 
+
+Concepts Used: -
+
+1. Inheritance: Classes Watchlist and Portfolio are implemented using inheritance from Market class 
+
+2. Encapsulation: Certain variables in all classes are protected using Encapsulation.
+
+3. Aggregation: Stocks in Market exist even if the user doesn't have a watchlist or a portfolio. This represents a "has-a" relationship
+                between watchlist/portfolio and market, where watchlist/portfolio have certain stocks from market.
+
+4. @property: Portfolio value is calculated by getting the total volume of a particular stock and multiplying with the value held of that
+              particular stock. This is done for all stocks in portfolio and is added together in the accumulator variable and the same
+              is returned. 
+              File: Portfolio
+              Class: Portfolio
+              Line: 173-193
+
+5. @classmethod: Market class has two class methods:-
+                 1. generate_stocks (line 82 - 108)
+                 2. display_stocks  (line 111 - 129)
+                 Kindly refer to function definitions for description.
+                 File: Market
+                 Class: Market
+
+6. @staticmethods: Watchlist class has two static methods:
+                   1. display_all_watchlists (Line 102 - 123)
+                   2. particular_watchlist_contents (Line 125 - 147)
+                   Kindly refer to function definitions for description.
+
+7. Error Handling: All user inputs are subject to errors which are raised inside classes and in test file.
+
+Conclusion: A stock portfolio and watchlist created for user where user can keep track of its investments
+            and trade in stocks. 
